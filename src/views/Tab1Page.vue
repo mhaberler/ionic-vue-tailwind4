@@ -18,6 +18,10 @@
         <h1 class="text-3xl font-bold text-white-800 mb-4">Welcome to Ionic</h1>
         <p class="text-gray-600 mb-6">This is a Tailwind CSS styled Ionic app.</p>
       </div>
+
+      <div class="ios:bg-primary android:bg-secondary">
+        This div will have a primary background color on iOS and a secondary background color on Android.
+      </div>
     </ion-content>
   </ion-page>
 </template>
