@@ -1,3 +1,6 @@
 /* For information on how to create your own theme, please see:
 http://ionicframework.com/docs/theming/ */
 @import "tailwindcss";
+
+@custom-variant android (.md &);
+@custom-variant ios (.ios &);
