@@ -3,8 +3,19 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "config": {
+    "host": "172.16.0.212",
+    "port": "8101"
+  },
   "scripts": {
-    "dev": "vite",
+    "watch": "vue-tsc --watch",
+    "dev": "vite --port=$npm_package_config_port --host",
+    "sync": "export PATH=\"/opt/homebrew/opt/ruby/bin:$PATH\" && bunx cap sync",
+    "debug-android-s24": "bunx cap run android  --live-reload --host $npm_package_config_host --port $npm_package_config_port  --target R3CX90A30EW",
+    "debug-android-s10": "bunx cap run android  --live-reload --host $npm_package_config_host --port $npm_package_config_port  --target RF8MC11LGDW",
+    "debug-android-a15": "bunx cap run android  --live-reload --host $npm_package_config_host --port $npm_package_config_port  --target RF8Y109W1JB",
+    "debug-ios": "export PATH=\"/opt/homebrew/opt/ruby/bin:$PATH\" &&  bunx cap run ios --live-reload --host  $npm_package_config_host --port $npm_package_config_port  --target 00008140-0002692C1E79801C",
+    "clean": "bunx rimraf ./dist",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "test:e2e": "cypress run",
