@@ -15,7 +15,7 @@
       <ExploreContainer name="Tab 1 page" />
 
       <div class="p-4">
-        <h1 class="text-3xl font-bold text-gray-800 mb-4">Welcome to Ionic</h1>
+        <h1 class="text-3xl font-bold text-white-800 mb-4">Welcome to Ionic</h1>
         <p class="text-gray-600 mb-6">This is a Tailwind CSS styled Ionic app.</p>
       </div>
     </ion-content>
